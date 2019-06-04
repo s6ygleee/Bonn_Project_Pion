@@ -1,6 +1,6 @@
 # Project_Pion
 
-Pion two point function correlator
+Calcualte Pion+ two point function correlator
 
 
 ## Main-codes
