@@ -3,7 +3,7 @@
 Pion two point function correlator
 
 
-<Main-codes>
+## Main-codes
 
 contraction.c : Main calculation function which save the pion two point correlator with time values data as txt file
   
@@ -14,7 +14,7 @@ read_binary_spinor_data.c : reading binary data from source file
 read_lime_spinor.h : Header file for using read_lime_spinor
 
 
-<Functional-codes>
+## Functional-codes
 
 single2double.c :
 
