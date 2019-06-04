@@ -5,7 +5,6 @@
 #include<string.h>
 #include "read_lime_spinor.h"
 
-
 int main(void){
 //variables
 	FILE * in;
