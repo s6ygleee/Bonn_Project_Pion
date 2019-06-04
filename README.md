@@ -16,10 +16,10 @@ read_lime_spinor.h : Header file for using read_lime_spinor
 
 ## Functional-codes
 
-single2double.c : change data storage type form double to float
+single2double.c : change data storage type from double to float
 
 big_endian.c : change small endian data to big endian data
 
-byte_swap_assign.c :
+byte_swap_assign.c : swap the data oder of the data set
 
-byte_swap_assign_single2double.c :
+byte_swap_assign_single2double.c : swap the data oder of the data set and change data type from double to float
