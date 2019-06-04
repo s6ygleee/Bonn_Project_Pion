@@ -7,7 +7,6 @@
 
 
 int main(void){
-
 //variables
 	FILE * in;
 	FILE * out;
