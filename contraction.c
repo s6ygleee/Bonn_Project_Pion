@@ -7,7 +7,8 @@
 
 
 int main(void){
-	
+
+//variables
 	FILE * in;
 	FILE * out;
 	FILE * ifs;
@@ -44,7 +45,7 @@ int main(void){
 	}
 
 
-//position finding
+//sci-dac data position finding
 
 	ifs = fopen("/hiskp4/bartek/inversions/quenched/wilson-b5.85_L16T40/mu0.005/source.0114.00.11.inverted","r");
 	limereader = limeCreateReader(ifs);
@@ -82,7 +83,7 @@ int main(void){
 
 	 	
 
-//main
+//main function
 for(v=0; v<157; v++)
 {
     for(k=0; k<12 ; k++)
@@ -92,7 +93,7 @@ for(v=0; v<157; v++)
 	{printf("Terminate the program. File name is too long\n");
 	return 1;}
 
-	status=read_lime_spinor(s[k], ifile, 0);
+	status=read_lime_spinor(s[k], ifile, 0); //update data from source file to s[k]
 
 	
 	if(status < 0 && status != LIME_EOR)
@@ -113,7 +114,8 @@ for(v=0; v<157; v++)
 				{
 					for(i = 0; i< 24; i++)
 					{ 
-						p+=s[k][(t*LX*LY*LZ+x*LY*LZ+y*LZ+z)*24+i]*s[k][(t*LX*LY*LZ+x*LY*LZ+y*LZ+z)*24+i];
+						p+=s[k][(t*LX*LY*LZ+x*LY*LZ+y*LZ+z)*24+i]*s[k][(t*LX*LY*LZ+x*LY*LZ+y*LZ+z)*24+i]; 
+						//data storage linearlization
 					}
 				}
 			}
